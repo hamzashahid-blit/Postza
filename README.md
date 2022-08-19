@@ -1,3 +1,24 @@
+# Postza: A free Postman
+Website: [[postza.vercel.app][postza.vercel.app]]
+[[file:./preview.png]]
+
+I am hoping to add features as need grows.
+Don't hesitate to add an issue if you want a feature or have any issues at all. I will gladly try to fix them.
+
+## Reasons for making:
+
+1. I found Postman to be too much of a hassle.
+2. Saw a video on YouTube of someone trying to make a postman alternative.
+3. Wanted to try out SvelteKit and have some practice on making websites.
+
+## Making
+
+Made with [[https://kit.svelte.dev/][SvelteKit]] and [[https://tailwindcss.com/][TailwindCSS]].
+I enjoyed the whole process and am looking forward to creating more projects with these, especially Svelte.
+
+
+Below is the general SvelteKit README.
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
