@@ -2,7 +2,7 @@
   import { createEventDispatcher } from "svelte";
 
   export let method: string;
-  export let url: string = "https://jsonplaceholder.typicode.com/todos/1";
+  export let url: string;
 
   const dispatch = createEventDispatcher();
   function send(){

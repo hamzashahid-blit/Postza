@@ -1,7 +1,7 @@
 <script lang="ts">
   import Input from "./Input.svelte";
   import axios, { type AxiosResponse } from "axios";
-  import { headers, queryParams, rawResponse, timeTaken } from "./stores";
+  import { headers, queryParams, rawResponse, timeTaken, jsonData } from "./stores";
   import TabButtons from "./TabButtons.svelte";
   import Tabs from "./Tabs.svelte";
 
@@ -21,7 +21,8 @@
       url: url,
   	  method: method,
 	  params: storeToObject($queryParams),
-	  headers: storeToObject($headers)
+	  headers: storeToObject($headers),
+	  data: $jsonData
 	}).catch(e => e) // Handle 404
 	  .then((response: AxiosResponse) => rawResponse.set(response));
   }

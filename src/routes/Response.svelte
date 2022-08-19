@@ -23,7 +23,8 @@
 	editorDiv.append(editor.dom);
   })
 
-  $: if(responseExists()){
+  // Check if response is valid and not {}
+  $: if($rawResponse && Object.keys($rawResponse).length > 0){
 	   let data = JSON.stringify($rawResponse.data)
   	   status = $rawResponse.status;
        size = data.length + JSON.stringify($rawResponse.headers).length
@@ -36,10 +37,6 @@
 	   	 }
 	   })
      }
-
-  function responseExists(){
-    return $rawResponse && Object.keys($rawResponse).length > 0
-  }
 </script>
 
 <div class="m-10">
