@@ -1,5 +1,5 @@
 * Postza: A free Postman
-Website: [[postza.vercel.app][postza.vercel.app]]
+Website: [[https://postza.vercel.app][postza.vercel.app]]
 [[file:./preview.png]]
 
 I am hoping to add features as need grows.
