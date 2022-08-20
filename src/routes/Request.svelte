@@ -4,7 +4,6 @@
   import { headers, queryParams, rawResponse, timeTaken, jsonData } from "./stores";
   import TabButtons from "./TabButtons.svelte";
   import Tabs from "./Tabs.svelte";
-import { npm_package_scripts_package } from "$env/static/private";
 
   let method: string, url: string;
   let startTime: number;
